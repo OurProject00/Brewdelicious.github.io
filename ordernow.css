@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #aca6a6; /* Set a background color for the body */
+}
+
+.header {
+  text-align: center;
+  padding: 20px; /* Add padding to the header */
+  background-color: #080808; /* Set a background color for the header */
+  color: white; /* Set text color for the header */
+}
+
+.order-system {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px; /* Add padding to the order system container */
+}
+
+h1 {
+  margin-top: 20px; /* Add some space above the heading */
+  text-align: center;
+}
+
+.order-products {
+  width: 100%;
+  border-spacing: 20px;
+  margin-top: 20px; /* Add some space above the table */
+}
+
+.product {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.product a {
+  text-decoration: none;
+  color: #080808; /* Set a link color */
+}
+
+.product img {
+  width: 100px; /* Set a specific width for the images */
+  max-width: 100%; /* Make sure images don't exceed their container */
+  border-radius: 8px;
+}
+
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 60px; /* Adjust the width of the input field */
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order_button {
+  text-align: center;
+  margin-top: 20px; /* Add space above the buttons */
+}
+
+.submit-button, .back-button {
+  background-color: #6e4c4c;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px; /* Add some space between buttons */
+  cursor: pointer;
+}
+
+.order-system {
+  position: relative;
+}
+
+.order_button {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* Adjust as needed */
+}
+
+.submit-button,
+.back-button {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.product {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.product.selected {
+  border-color: #007bff; /* Highlight color when selected */
+}

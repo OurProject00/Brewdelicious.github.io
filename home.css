@@ -1,0 +1,78 @@
+/* Apply styles to the table cell */
+table {
+    width: 100%;
+    height: 500px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    
+}
+td {
+    width: 100px;
+    height: 100px;
+    background-image: url('home1.jpg');
+    background-size: cover;
+    background-position: center ;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+/* Apply styles to the website name */
+.wn {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 0% 0% 0% 0% ;
+    margin: 0% 0% 2% 0% ;
+}
+
+.st {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 0% 0% 2% 0% ;
+    margin: 0% 0% 0% 0% ;
+}
+
+
+/* Apply styles to the Order Now link */
+a.on {
+    font-size: 30px;
+    color: lightgrey;
+    position: relative;
+    top: -15px;
+    
+}
+
+/* Apply styles to the coffee shop title */
+h1[style="font-family: 'Arial';"] {
+    font-family: 'Arial';
+}
+
+/* Apply styles to the coffee description */
+p[style="font-family: 'times new roman'; font-size: 30px; margin-top: 0px; margin-bottom: 10px;"] {
+    font-family: 'times new roman';
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Apply styles to the address */
+p[style="font-family: 'calibri light'; font-size: 20px; margin-top: 30px;"] {
+    font-family: 'calibri light';
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* Apply styles to the divider */
+hr[width="50%"] {
+    width: 50%;
+}
+
+/* Apply styles to the centered div */
+.centered h1 {
+    text-align: center;
+}
