@@ -3,7 +3,7 @@ body{
    }
    /* Main content container styles */
     .best-sellers-container {
-        max-width: 60%;
+        max-width: 800px;
         margin: 70px auto;
         padding: 20px;
         background-color: #f9f9f9;
