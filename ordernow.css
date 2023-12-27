@@ -66,9 +66,15 @@ input {
   border-radius: 5px;
 }
 
+
+
 .order_button {
   text-align: center;
-  margin-top: 20px; /* Add space above the buttons */
+  margin-top: 30px; /* Add space above the buttons */
+  margin-left: 37%;
+  margin-bottom: 20px;
+  display: flex;
+  width: 200px; /* Adjust as needed */
 }
 
 .submit-button, .back-button {
@@ -76,28 +82,13 @@ input {
   color: white;
   padding: 15px 30px;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   margin-right: 10px; /* Add some space between buttons */
   cursor: pointer;
 }
 
 .order-system {
   position: relative;
-}
-
-.order_button {
-  position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 50px; /* Adjust as needed */
-  display: flex;
-  justify-content: space-between;
-  width: 200px; /* Adjust as needed */
-}
-
-.submit-button,
-.back-button {
-  padding: 20px;
-  cursor: pointer;
 }
 
 .product {
