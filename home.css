@@ -20,6 +20,10 @@ td {
     color: whitesmoke;
 }
 
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* Apply styles to the website name */
 .wn {
@@ -76,3 +80,4 @@ hr[width="50%"] {
 .centered h1 {
     text-align: center;
 }
+
