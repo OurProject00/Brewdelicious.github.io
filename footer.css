@@ -1,0 +1,26 @@
+.footer {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px; /* Set a smaller padding value */
+}
+
+.copyright p {
+    flex: 1;
+}
+
+.follow-us,
+.reference {
+    text-align: center;
+    flex: 1;
+    margin: 0px; /* Adjust the margin to reduce the spacing between sections */
+}
+
+.follow-us a,
+.reference a {
+    color: white;
+    text-decoration: none;
+    margin: 5px; /* Adjust the margin to reduce the spacing between links */
+}
