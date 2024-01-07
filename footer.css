@@ -1,26 +1,26 @@
-.footer {
-    background-color: grey;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5px; /* Set a smaller padding value */
-}
-
-.copyright p {
-    flex: 1;
-}
-
-.follow-us,
-.reference {
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    flex: 1;
-    margin: 0px; /* Adjust the margin to reduce the spacing between sections */
+  }
+  
+  .copyright {
+    margin-bottom: 10px;
+  }
+  
+  .reference {
+    font-size: 1.0em;
+    cursor: pointer;
+  }
+
+  .reference a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+ .reference a:hover {
+    text-decoration: underline;
 }
 
-.follow-us a,
-.reference a {
-    color: white;
-    text-decoration: none;
-    margin: 5px; /* Adjust the margin to reduce the spacing between links */
-}
+  
