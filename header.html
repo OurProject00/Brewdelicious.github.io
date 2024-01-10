@@ -1,37 +1,51 @@
-<!-- header.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee & Milk Tea Shop</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="header.css">
+    
+
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <div class="logo">
-                <a href="index.html"><img src="logo.png"></a>
-                
-            </div>
+    
+    <!-- header section starts here -->
+
+<header>
+
+    <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+    </div>
+
+
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="bestsellers.html">BESTSELLERS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="end">
+        <div class="icons">
+            <i class="material-icons" id="menu-bars">menu</i>
         </div>
 
-        <div class="menu">
-            <ul>
-                <div class="home-contact">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="bestsellers.html">Bestsellers</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>                   
-                </div>
-                    <li>
-                    <div class="order-box">
-                        <button onclick="redirectToordernow()">Order Now</button>
-                    </div>
-                    </li>
-            </ul>
+        <div class="order-box">
+            <button onclick="redirectToordernow()">Order Now</button>
         </div>
-    </header>
+    </div>
+
+
+</header>
+
+
+
+
+
+    <!-- header section ends here -->
+
 </body>
 </html>
