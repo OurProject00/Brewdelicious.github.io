@@ -3,93 +3,173 @@ body {
     padding-top:  6%; /* Remove padding from the body */         
 }
 
-header {
-    background: linear-gradient( #998c7b, #695951);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0; /* Add padding to give some space */
+*{
+text-decoration: none;
+box-sizing: border-box;
+outline: none;
+border: none;
+transition: all .2s linear;
+}
+
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    background: linear-gradient( #534d47, #837c76, #aca29a);
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1500;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
-    
-}
-
-.logo img {
-    max-width: 280px;
-    margin: 10px 20px; /* Add margin to the logo image for spacing */
-}
-
-
-.logo-container {
+    top: 0; left: 0; right: 0;
+    padding: 1rem 7%;
     display: flex;
     align-items: center;
-    font-size: larger;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+
 }
 
-.menu ul {
-    list-style: none;
-    padding:0;
-    display: flex;
+header .logo img {
+    max-width: 280px;
+    margin-left: -70px;
 }
 
-.menu li {
-    font-size: 150%;
+header .navbar a
+{
+    font-size: 15px;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    color: rgb(37, 37, 37);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+header .navbar a:hover
+{
+    color: #000000;
+    background: linear-gradient( #dacec0, #c5c5c5);
+}
+
+header .icons #menu-bars
+{
+display: none;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+ header  .end
+{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.icons i{
     margin-right: 30px;
+    font-size:36px
 }
-
-.menu li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.menu li a:hover {
-    text-decoration: underline; /* Change to your desired hover text decoration */
-}
-
-/* Add active class to highlight the current page */
-.menu li.active a {
-    text-decoration: underline; /* Change to your desired active text decoration */
-}
-
-.header-text {
-    text-align: center;
-}
-
-p {
-    margin: 50px;
-}
-
 
 .order-box button{
-    background-color: transparent; /* Background color */
-    color: rgb(255, 255, 255);
+    background: linear-gradient( #dacec0, #c5c5c5);
+    color: rgb(37, 37, 37);
+    margin-right: -50px;
     padding: 10px 20px; /* Add padding inside the box */
     font-size: 16px;
-    border: none;
     cursor: pointer;
     border-radius: 5px; /* Rounded corners for the box */
-    display: flex; /* Display as a flex container to align vertically */
-    align-items: center; /* Center the content vertically */
     width: 120px; /* Set the width of the box */
     height: 50px; /* Set the height of the box */
     border: 1px solid #410909; /* Add a border to the box */
-    background: linear-gradient( #92826d, #695951);
-    
-}
-
-.order-box button:hover{
-    background-color: rgb(58, 17, 17);
-}
-
-.home-contact {
-    display: flex;
-    align-items: center;
 }
 
 
 
+/* media queries */
+
+@media(max-width: 1016px)
+{
+
+    html
+    {
+        font-size: 90%;
+    }
+
+
+    header .logo img
+     {
+        max-width: 200px;
+        margin-left: -50px;
+    }
+}
+
+@media(max-width: 932px)
+{
+    header .icons #menu-bars
+    {
+    display: inline-block;
+    } 
+
+    header .navbar
+    {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #363636;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a
+    {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        background: #eee;
+    }
+
+    header .logo img
+    {
+       max-width: 200px;
+       margin-left: -20px;
+   }
+
+   .order-box button
+   {    
+    margin-right: 0;
+    }
+
+}
+
+@media(max-width: 400px)
+{
+    header .logo img
+    {
+       max-width: 180px;
+       margin-left: -20px;
+   }
+
+   .icons i{
+    margin-right: 10px;
+    font-size:36px
+}
+
+.order-box button
+   {    
+    margin-right: -20px;
+    width: 90px;
+    }
+
+}
