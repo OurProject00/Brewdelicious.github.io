@@ -21,8 +21,8 @@ td {
 }
 
 section{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 /* Apply styles to the website name */
@@ -34,50 +34,155 @@ section{
     margin: 0% 0% 2% 0% ;
 }
 
-.st {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding: 0% 0% 2% 0% ;
-    margin: 0% 0% 0% 0% ;
-}
-
-
 /* Apply styles to the Order Now link */
 a.on {
     font-size: 30px;
-    color: lightgrey;
+    color: rgb(255, 255, 255);
     position: relative;
-    top: -15px;
+    top: -10px;
+    cursor: pointer;
     
 }
 
-/* Apply styles to the coffee shop title */
-h1[style="font-family: 'Arial';"] {
-    font-family: 'Arial';
+.image_text, .next
+{
+    text-align: center;
 }
 
-/* Apply styles to the coffee description */
-p[style="font-family: 'times new roman'; font-size: 30px; margin-top: 0px; margin-bottom: 10px;"] {
+.image_text h1 
+{
+    font-family: 'Arial';
+    font-size: 35px ;
+}
+
+.image_text .p1
+{
     font-family: 'times new roman';
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-/* Apply styles to the address */
-p[style="font-family: 'calibri light'; font-size: 20px; margin-top: 30px;"] {
+.image_text .p2
+{
     font-family: 'calibri light';
     font-size: 20px;
     margin-top: 30px;
 }
 
+
 /* Apply styles to the divider */
-hr[width="50%"] {
-    width: 50%;
+hr {
+    width: 70%;
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 20px auto; /* Adjust the margin as needed */
 }
 
-/* Apply styles to the centered div */
-.centered h1 {
-    text-align: center;
+/* media queries */
+
+@media(max-width: 932px)
+{
+        
+    .image_text h1 
+    {
+    font-size: 30px;
+    }
+
+    .image_text .p1
+    {
+        font-size: 25px;
+    }
+
 }
+
+
+@media(max-width:725px)
+{
+    table {
+        width: 100%;
+    }
+}
+
+@media(max-width:606px)
+{
+    table {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 612px)
+
+{
+       
+    .image_text h1 
+    {
+    font-size: 25px;
+    }
+
+    .image_text .p1, .p2
+    {
+        font-size: 22px;
+    }
+
+}
+
+
+@media(max-width: 425px)
+
+{
+       
+    .image_text h1 
+    {
+    font-size: 22px;
+    }
+
+    .image_text .p1
+    {
+        font-size: 18px;
+    }
+
+    .image_text .p2
+    {
+        font-size: 18px;
+    }
+
+}
+
+
+@media(max-width: 400px)
+
+{
+
+    .wn
+    {
+        font-size: 45px;   
+    }
+
+    a.on 
+    {
+        font-size: 25px;
+        top: 0px;
+        
+    }
+       
+    .image_text h1 
+    {
+    font-size: 20px;
+    }
+
+    .image_text .p1
+    {
+        font-size: 15px;
+    }
+
+    .image_text .p2
+    {
+        font-size: 15px;
+    }
+}
+
+
 
