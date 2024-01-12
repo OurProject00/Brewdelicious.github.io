@@ -85,4 +85,160 @@ text-align: left;
 }
 
 
-/* Your existing footer styles */
+
+
+
+
+/* media queries start here */
+
+@media(max-width: 1048px)
+
+{
+    .menu-container {
+        max-width: 900px;
+    }
+
+}
+
+@media(max-width: 941px)
+
+{
+    .menu-container {
+        max-width: 740px;
+    }
+
+    .menu-items {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+}
+
+@media(max-width: 849px)
+
+{
+    .menu-container {
+        max-width: 700px;
+    }
+    
+    .menu-items {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+
+}
+
+@media(max-width: 774px)
+
+{
+    .menu-container {
+        max-width: 620px;
+    }
+
+    .menu-items {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+}
+
+@media(max-width: 700px)
+
+{
+    .menu-container {
+        max-width: 570px;
+    }
+
+    .menu-items {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+@media(max-width: 651px)
+{
+
+    .menu-container {
+        max-width: 500px;
+    }
+
+    .menu-items {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 532px)
+
+{
+    .menu-container {
+        max-width: 425px;
+    }
+
+    .menu-items {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+@media(max-width: 454px)
+
+{
+    .menu-container {
+        max-width: 400px;
+    }
+
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .menu-item img {
+        width: 120px; /* Set a specific width for the images */
+        height: 150px;
+        max-width: 100%; 
+        margin: 7% auto;
+    }
+
+}
+
+
+
+
+@media(max-width: 409px)
+
+{
+    .menu-item img {
+        margin: 9% auto;
+    }
+
+    .menu-container{
+        border-radius: 0px;
+        margin-top: 61px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media(max-width: 376px)
+
+{
+    .menu-item img {
+        margin: 10% auto;
+    }
+
+}
+
+@media(max-width: 346px)
+
+{
+    .menu-item img {
+        margin: 11% auto;
+    }
+
+   
+
+}
