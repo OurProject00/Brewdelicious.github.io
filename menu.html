@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee & Milk Tea Menu</title>
-    <script src="display_header.js" defer></script>
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="footer.css">
+
+    <!-- link for header -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+
+    <!-- js link -->
+    <script src="header.js" defer></script>
    
 </head>
 <body>
+    
+    <!-- header starts here -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
+    
+    
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="bestsellers.html">BESTSELLERS</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    
+        <div class="end">
+            <div class="icons">
+                <i class="material-icons" id="menu-bars">menu</i>
+            </div>
+    
+            <div class="order-box">
+                <button onclick="redirectToordernow()">Order Now</button>
+            </div>
+        </div>
+    
+    
+    </header>
+
+<!-- menupage content starts here -->
 
 <div class="menu-container">
     <h1>Menu</h1>
@@ -19,112 +57,124 @@
         <div class="intro">
             <h2>Coffee</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sed quas voluptatum debitis molestiae deleniti nisi. </p>
-        </div>
+        </div> <br>
+        
         <div class="menu-items">
+
             <div class="menu-item">
-                    <img src="coffee.png" alt="Americano">
+            <img src="coffee.png" alt="Americano">
                 <div class="item-details">
                     <h3>Coffee Name</h3>
                     <p>$##.##</p>
-                    <dl>
-                    <dt> Description:</dt>
-                    <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                </dl>
+                        <dl>
+                            <dt> Description:</dt>
+                            <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                        </dl>
                 </div>
             </div>
+
             <div class="menu-item">
-                <img src="coffee.png" alt="Americano">
-            <div class="item-details">
-                <h3>Coffee Name</h3>
-                <p>$##.##</p>
-                <dl>
-                <dt> Description:</dt>
-                <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-            </dl>
-            </div>
-        </div>
-        <div class="menu-item">
             <img src="coffee.png" alt="Americano">
-        <div class="item-details">
-            <h3>Coffee Name</h3>
-            <p>$##.##</p>
-            <dl>
-            <dt> Description:</dt>
-            <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-        </dl>
-        </div>
-        </div>
-            <div class="menu-item">
-                <img src="coffee.png" alt="Americano">
-            <div class="item-details">
-                <h3>Coffee Name</h3>
-                <p>$##.##</p>
-                <dl>
-                <dt> Description:</dt>
-                <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-            </dl>
+                <div class="item-details">
+                    <h3>Coffee Name</h3>
+                    <p>$##.##</p>
+                        <dl>
+                            <dt> Description:</dt>
+                            <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                        </dl>
+                </div>
             </div>
-        </div>
-            <!-- Add more coffee items as needed -->
+
+            <div class="menu-item">
+            <img src="coffee.png" alt="Americano">
+                <div class="item-details">
+                    <h3>Coffee Name</h3>
+                    <p>$##.##</p>
+                        <dl>
+                            <dt> Description:</dt>
+                            <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                        </dl>
+                </div>
+            </div>
+
+            <div class="menu-item">
+            <img src="coffee.png" alt="Americano">
+                <div class="item-details">
+                    <h3>Coffee Name</h3>
+                    <p>$##.##</p>
+                        <dl>
+                            <dt> Description:</dt>
+                            <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                        </dl>
+                </div>
+            </div>
+
         </div>
     </section>
 
 
-<section>
-        <h2>Milk Tea</h2>
+    <section>
+        <div class="intro">
+            <h2>Milk Tea</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sed quas voluptatum debitis molestiae deleniti nisi. </p>
+        </div> <br>
+
         <div class="menu-items">
+
             <div class="menu-item">
                 <img src="milk tea.png" alt="Black Milk Tea">
-                <div class="item-details">
-                    <h3>Milk Tea Name</h3>
-                    <p>$##.##</p>
-                <dl>
-                    <dt> Description:</dt>
-                    <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                </dl>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="milk tea.png" alt="Black Milk Tea">
-                <div class="item-details">
-                    <h3>Milk Tea Name</h3>
-                    <p>$##.##</p>
-                <dl>
-                    <dt> Description:</dt>
-                    <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                </dl>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="milk tea.png" alt="Black Milk Tea">
-                <div class="item-details">
-                    <h3>Milk Tea Name</h3>
-                    <p>$##.##</p>
-                <dl>
-                    <dt> Description:</dt>
-                    <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                </dl>
-                </div>
+                    <div class="item-details">
+                        <h3>Milk Tea Name</h3>
+                        <p>$##.##</p>
+                            <dl>
+                                <dt> Description:</dt>
+                                <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                            </dl>
+                    </div>
             </div>
 
             <div class="menu-item">
                 <img src="milk tea.png" alt="Black Milk Tea">
-                <div class="item-details">
-                    <h3>Milk Tea Name</h3>
-                    <p>$##.##</p>
-                <dl>
-                    <dt> Description:</dt>
-                    <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
-                </dl>
-                </div>
+                    <div class="item-details">
+                        <h3>Milk Tea Name</h3>
+                        <p>$##.##</p>
+                            <dl>
+                                <dt> Description:</dt>
+                                <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                            </dl>
+                    </div>
             </div>
-            <!-- Add more milk tea items as needed -->
+
+            <div class="menu-item">
+                <img src="milk tea.png" alt="Black Milk Tea">
+                    <div class="item-details">
+                        <h3>Milk Tea Name</h3>
+                        <p>$##.##</p>
+                            <dl>
+                                <dt> Description:</dt>
+                                <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                            </dl>
+                    </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="milk tea.png" alt="Black Milk Tea">
+                    <div class="item-details">
+                        <h3>Milk Tea Name</h3>
+                        <p>$##.##</p>
+                            <dl>
+                                <dt> Description:</dt>
+                                <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</dd>
+                            </dl>
+                    </div>
+            </div>
+
         </div>
 </div>
 
 </section>   
 
-<!-- Your existing footer goes here -->
+<!-- footer stars here -->
 
 <footer>
     <div class="copyright">© 2023 Your Company Name. All rights reserved.</div>
@@ -133,8 +183,6 @@
         <a href="https://www.iconfinder.com/icons/264397/to_coffee_drink_cup_icon">reference 2</a>
         <a href="https://pngtree.com/freepng/pearl-milk-tea-pearl-drink-transparent_9059833.html">reference 3</a>
 </footer>
-
-<!-- Link your existing JavaScript file here if you have one -->
 
 </body>
 </html>

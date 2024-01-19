@@ -6,25 +6,60 @@
     <title>Coffee & Milk Tea Shop - Best Sellers</title>
     <link rel="stylesheet" href="bestsellers.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="display_header.js" defer></script>
+    
+    <!-- link for header -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+
+    <!-- js link -->
+    <script src="header.js" defer></script>
     
 </head>
 
 <body>
 
-    <!-- Main content for the Best Sellers page -->
+    <!-- header starts here -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
+    
+    
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="bestsellers.html">BESTSELLERS</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    
+        <div class="end">
+            <div class="icons">
+                <i class="material-icons" id="menu-bars">menu</i>
+            </div>
+    
+            <div class="order-box">
+                <button onclick="redirectToordernow()">Order Now</button>
+            </div>
+        </div>
+    
+    
+    </header>
+
+    <!-- bestseller page content starts here -->
+    
     <div class="best-sellers-container">
         <h1>Best Sellers</h1>
         <hr width="70%">
 
-        <!-- Introduction Section -->
         <div class="introduction">
             <p>Browse through our selection of best-selling coffee and milk tea products, loved by our customers.</p>
         </div>
 
-        <!-- Featured Products Section -->
         <div class="featured-products">
-            <!-- Product 1 -->
             <div class="product-card">
                 <img src="coffee.png" alt="coffee">
                 <h3>Coffee</h3>
@@ -33,7 +68,6 @@
             </div>
             
 
-            <!-- Product 2 -->
             <div class="product-card">
                 <img src="coffee.png" alt="coffee">
                 <h3>Coffee</h3>
@@ -48,17 +82,6 @@
                 <a href="ordernow.html">Shop Now</a>
             </div>
 
-            <!-- Add more product cards as needed -->
-
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="coffee.png" alt="coffee">
-                <h3>Coffee</h3>
-                <p>A delightful blend of espresso, steamed milk, and caramel syrup.</p>
-                <a href="ordernow.html">Shop Now</a>
-            </div>
-
-            <!-- Product 2 -->
             <div class="product-card">
                 <img src="coffee.png" alt="coffee">
                 <h3>Coffee</h3>
@@ -73,7 +96,13 @@
                 <a href="ordernow.html">Shop Now</a>
             </div>
 
-            <!-- Add more product cards as needed -->
+            <div class="product-card">
+                <img src="coffee.png" alt="coffee">
+                <h3>Coffee</h3>
+                <p>A delightful blend of espresso, steamed milk, and caramel syrup.</p>
+                <a href="ordernow.html">Shop Now</a>
+            </div>
+
         </div>
 
         <br><br>
@@ -81,15 +110,12 @@
         <br><br>
 
 
-        <!-- Benefits of Best Sellers Section -->
         <div class="benefits">
             <h2>Benefits of Choosing Our Best Sellers</h2>
-            <!-- List the key benefits of choosing best-selling products -->
             <ul>
                 <li>Popular flavors loved by many.</li>
                 <li>High customer satisfaction.</li>
                 <li>Trusted by our loyal customers.</li>
-                <!-- Add more benefits as needed -->
             </ul>
         </div>
 
@@ -99,11 +125,8 @@
         <br><br>
 
 
-        <!-- Limited-Time Offers Section -->
         <div class="limited-offers">
-            <!-- Highlight limited-time offers or discounts -->
             <h2>Limited-Time Offers</h2>
-            <!-- Add limited-time offers content here -->
             <p>Enjoy a 10% discount on all best-selling products. Hurry, offer ends soon!</p>
         </div>
 
@@ -112,28 +135,21 @@
         <br><br>
 
 
-        <!-- User-Friendly Navigation Section -->
         <div class="navigation">
-            <!-- Ensure easy navigation with clear categories and filters -->
-            <!-- Add navigation content here -->
             <p>Explore more from our menu: <a href="menu.html">Menu</a> </p>
         </div>
 
-        <!-- Mobile Responsiveness Section -->
         <div class="mobile-responsive">
-            <!-- Optimize the webpage for mobile devices -->
-            <!-- Add mobile responsiveness content here -->
             <p>Our Best Sellers are accessible on the go. Browse and order from your mobile device with ease.</p>
         </div>
 
-        <!-- Call to Action Section -->
         <div class="call-to-action">
-            <!-- Prompt visitors to explore more products or make a purchase -->
-            <!-- Add call-to-action content here -->
+
             <p>Ready to try our best sellers? <a href="bestsellers.html">Explore Now</a></p>
         </div>
     </div>
 
+    <!-- footer stars here -->
     
     <footer>
         <div class="copyright">© 2023 Your Company Name. All rights reserved.</div>

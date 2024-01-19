@@ -6,11 +6,51 @@
     <title>Coffee & Milk Tea Shop</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="display_header.js" defer></script>
-    
+
+    <!-- link for header -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+
+    <!-- js link -->
+    <script src="header.js" defer></script>
 
 </head>
+
 <body>
+
+    <!-- header starts here -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
+    
+    
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="bestsellers.html">BESTSELLERS</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    
+        <div class="end">
+            <div class="icons">
+                <i class="material-icons" id="menu-bars">menu</i>
+            </div>
+    
+            <div class="order-box">
+                <button onclick="redirectToordernow()">Order Now</button>
+            </div>
+        </div>
+    
+    
+    </header>
+
+<!-- homepage content starts here -->
+
     <table>
         <tr>
             <td >
@@ -24,26 +64,44 @@
     <section>
     
         <div class="image_text">
-            <h1>Coffee Shop & Outdoor Seating</h1>
+            <h1>Coffee & Milk Tea Shop</h1>
             <p class="p1">
                 Online Ordering & Delivery <br>
-                Morning Brews, Espresso, & Pastries
+                Enjoy Our Delicious Drinks
             </p>
-            <p class="p2">Coffee Haven | 1234 Bean St. Your City, ST 56789</p>
+            <p class="p2">Brewdelicious | 1234 Guest St. Calamba ST 56789</p>
 
         </div>
 
     </section>
 
-    <hr class="hr" width="50%">
+    <hr class="hr" >
 
     <section>
 
         <div class="next">
-            <h1> abcdefghijklmnop   </h1>
+            <a href="menu.html"> Our Menus</a> <br><br><br>
+            <a href="ordernow.html"> Order Online</a>
+
         </div>
 
     </section>
+
+    <hr class="hr">
+
+    <section>
+
+        <div class="next">
+           <p> Monday to Friday 8am - 3pm</p> 
+           <p> Monday to Friday 10am - 5pm</p>
+           <p> We are closed on Sunday</p>
+
+        </div>
+
+    </section>
+
+
+<!-- footer stars here -->
 
     <footer>
         <div class="copyright">© 2023 Your Company Name. All rights reserved.</div>

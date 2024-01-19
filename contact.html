@@ -6,30 +6,72 @@
     <title>Coffee & Milk Tea Shop</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="display_header.js" defer></script>
+    
+    <!-- link for header -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+
+    <!-- js link -->
+    <script src="header.js" defer></script>
     
 
-    </head>
+</head>
     
-    <body>
+<body>
+
+    <!-- header starts here -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
+        </div>
     
-        <div class="container">
-            <main>
-                <h2>Contact Us</h2>
     
-                <p>We would love to hear from you! Please use the contact information and social links below to get in touch or fill out the form.</p>
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="bestsellers.html">BESTSELLERS</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
     
-                <div class="contact-info">
-                    <div>
-                        <h3>Email:</h3>
-                        <p>info@yourwebsite.com</p>
-                    </div>
-                    <div>
-                        <h3>Phone:</h3>
-                        <p>(123) 456-7890</p>
-                    </div>
-                    <!-- Add more contact information as needed -->
+        <div class="end">
+            <div class="icons">
+                <i class="material-icons" id="menu-bars">menu</i>
+            </div>
+    
+            <div class="order-box">
+                <button onclick="redirectToordernow()">Order Now</button>
+            </div>
+        </div>
+    
+    
+    </header>
+
+    <!-- contact page content starts here -->
+    
+    <div class="container">
+
+        <main>
+
+            <h2>Contact Us</h2>
+    
+            <p>We would love to hear from you! Please use the contact information and social links below to get in touch or fill out the form.</p>
+    
+            <div class="contact-info">
+
+                <div>
+                    <h3>Email:</h3>
+                    <p>Brewdelicious@yourwebsite.com</p>
                 </div>
+
+                <div>
+                    <h3>Phone:</h3>
+                    <p>09123456789</p>
+                </div>
+
+             </div>
     
                 <div class="social-links">
                     <h3>Connect With Us:</h3>
@@ -40,27 +82,25 @@
                     <a href="https://facebook.com" target="_blank">Facebook</a>
                     <a href="https://www.Twitter.com" target="_blank">Twitter</a>
                     <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <!-- Add more social links as needed -->
                 </div>
             
     
-                <form action="#" method="post">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
     
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
     
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
     
-                    <button type="submit">Send Message</button>
-                </form>
-            </main>
-    
-            <p>If you prefer, you can also reach us by email or phone. We'll get back to you as soon as possible. Thank you!</p>
-        </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+    </div>
 
+    <!-- footer stars here -->
         
     <footer>
         <div class="copyright">© 2023 Your Company Name. All rights reserved.</div>
@@ -69,7 +109,7 @@
             <a href="https://www.iconfinder.com/icons/264397/to_coffee_drink_cup_icon">reference 2</a>
             <a href="https://pngtree.com/freepng/pearl-milk-tea-pearl-drink-transparent_9059833.html">reference 3</a>
     </footer>
-    </body>
+</body>
     
-    </html>
+</html>
     

@@ -1,8 +1,8 @@
 
 
 h2 {
-    color: #4caf50;
-    border-bottom: 2px solid #4caf50;
+    color:#423525;
+    border-bottom: 2px solid #000000;
     padding-bottom: 5px;
     margin-top: 20px;
 }
@@ -11,19 +11,53 @@ p {
     margin-bottom: 15px;
 }
 
-/* Add more styles as needed */
-
-/* Container style */
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin:  70px auto;
 }
 
-
-/* Main content style */
 main {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+
+
+/* media queries */
+
+@media(max-width: 1024px)
+
+{
+    .container {
+        max-width: 900px;
+    }
+
+}
+
+
+
+@media(max-width: 768px)
+
+{
+    .container {
+        max-width: 620px;
+    }
+
+}
+
+
+@media(max-width: 425px)
+
+{
+    .container {
+        max-width: 430px;
+        border-radius: 0px;
+        margin-top: 61px;
+        margin-bottom: 0px;
+    }
+
+}
+
+
+

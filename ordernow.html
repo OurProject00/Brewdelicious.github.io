@@ -14,9 +14,12 @@
         </div>
 
         <br><br><br>
-
+    
+    <div class="name">
         <h1>coffee</h1>
-        <hr width="70%">
+        <hr>
+    </div>
+
         <table class="order-products">
             <tr>
                 <!-- Product 1 -->
@@ -56,12 +59,14 @@
 
         <br><br><br>
 
-        <h1>milk tea</h1>
-        <hr width="70%">
+        <div class="name">
+            <h1>milk tea</h1>
+            <hr>
+        </div>
 
         <table class="order-products">
             <tr>
-                <!-- Product 1 -->
+                
                 <td class="product" onclick="toggleSelection(this)">
                     <img src="milk tea.png" alt="Milk Tea Product">
                     <h3>Milk Tea Name</h3>
@@ -71,7 +76,6 @@
                     <input type="hidden" name="selected_products[]" value="">
                 </td>
 
-                <!-- Product 2 -->
                 <td class="product" onclick="toggleSelection(this)">
                     <img src="milk tea.png" alt="Milk Tea Product">
                     <h3>Milk Tea Name</h3>
@@ -90,7 +94,6 @@
                     <input type="hidden" name="selected_products[]" value="">
                 </td>
 
-                <!-- Add more products as needed -->
             </tr>
         </table>
 
@@ -108,7 +111,6 @@
         }
 
         function submitOrder() {
-            // Implement your order submission logic here
             alert('Order submitted!');
         }
 
