@@ -5,113 +5,120 @@
     <meta charset="UTF-8">
     <title>Ordering System</title>
     <link rel="stylesheet" href="ordernow.css">
-    
 </head>
 <body>
-    <div class="order-system" id="order-system">
-        <div class="header">
-            <h2>YOU CAN ORDER NOW!!</h2>
-        </div>
+    <form action="order.php" method="post" id="order-form">
+        <div class="order-system" id="order-system">
+            <div class="header">
+                <h2>YOU CAN ORDER NOW!!</h2>
+            </div>
 
-        <br><br><br>
-    
-    <div class="name">
-        <h1>coffee</h1>
-        <hr>
-    </div>
+            <br><br><br>
 
-        <table class="order-products">
-            <tr>
-                <!-- Product 1 -->
-                <td class="product" onclick="toggleSelection(this)">
-                    <img src="coffee.png" alt="Coffee Product">
-                    <h3>Coffee Name</h3>
-                    <p>$5.99</p>
-                    <label for="quantity1">Quantity:</label>
-                    <input type="number" id="quantity1" name="quantity1" value="1" min="1">
-                    <input type="hidden" name="selected_products[]" value="">
-                </td>
+            <div class="name">
+                <h1>coffee</h1>
+                <hr>
+            </div>
 
-                <!-- Product 2 -->
-                <td class="product" onclick="toggleSelection(this)">
-                    <img src="coffee.png" alt="Coffee Product">
-                    <h3>Coffee Name</h3>
-                    <p>$4.99</p>
-                    <label for="quantity2">Quantity:</label>
-                    <input type="number" id="quantity2" name="quantity2" value="1" min="1">
-                    <input type="hidden" name="selected_products[]" value="">
-                </td>
+            <table class="order-products">
+                <tr>
+                    <!-- Product 1 -->
+                    <td class="product" onclick="toggleSelection(this)">
+                        <img src="coffee.png" alt="Coffee Product">
+                        <label for="product_name">Coffee Name1</label>
+                        <p>$5.99</p>
+                        <label for="quantity1">Quantity:</label>
+                        <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+                    </td>
 
-                <td class="product" onclick="toggleSelection(this)">
-                    <img src="coffee.png" alt="Coffee Product">
-                    <h3>Coffee Name</h3>
-                    <p>$4.99</p>
-                    <label for="quantity2">Quantity:</label>
-                    <input type="number" id="quantity2" name="quantity2" value="1" min="1">
-                    <input type="hidden" name="selected_products[]" value="">
-                </td>
+                    <!-- Product 2 -->
+                    <td class="product" onclick="toggleSelection(this)">
+                        <img src="coffee.png" alt="Coffee Product">
+                        <label for="product_name">Coffee Name2</label>
+                        <p>$4.99</p>
+                        <label for="quantity2">Quantity:</label>
+                        <input type="number" id="quantity2" name="quantity2" value="1" min="1">
+                    </td>
 
-                <!-- Add more products as needed -->
-            </tr>
+                    <!-- Add more products as needed -->
+                </tr>
+            </table>
 
-            
-        </table>
+            <br><br><br>
 
-        <br><br><br>
+            <div class="name">
+                <h1>milk tea</h1>
+                <hr>
+            </div>
 
-        <div class="name">
-            <h1>milk tea</h1>
-            <hr>
-        </div>
+            <table class="order-products">
+                <tr>
+                    <td class="product" onclick="toggleSelection(this)">
+                        <img src="milk tea.png" alt="Milk Tea Product">
+                        <label for="product_name">Milk Tea Name1</label>
+                        <p>$5.99</p>
+                        <label for="quantity3">Quantity:</label>
+                        <input type="number" id="quantity3" name="quantity3" value="1" min="1">
+                    </td>
 
-        <table class="order-products">
-            <tr>
-                
-                <td class="product" onclick="toggleSelection(this)">
-                    <img src="milk tea.png" alt="Milk Tea Product">
-                    <h3>Milk Tea Name</h3>
-                    <p>$5.99</p>
-                    <label for="quantity3">Quantity:</label>
-                    <input type="number" id="quantity3" name="quantity3" value="1" min="1">
-                    <input type="hidden" name="selected_products[]" value="">
-                </td>
+                    <td class="product" onclick="toggleSelection(this)">
+                        <img src="milk tea.png" alt="Milk Tea Product">
+                        <label for="product_name">Milk Tea Name2</label>
+                        <p>$4.99</p>
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity4" value="1" min="1">
+                    </td>
+                </tr>
+            </table>
 
-                <td class="product" onclick="toggleSelection(this)">
-                    <img src="milk tea.png" alt="Milk Tea Product">
-                    <h3>Milk Tea Name</h3>
-                    <p>$4.99</p>
-                    <label for="quantity4">Quantity:</label>
-                    <input type="number" id="quantity4" name="quantity4" value="1" min="1">
-                    <input type="hidden" name="selected_products[]" value="">
-                </td>
+            <div class="name">
+                <h1>Additional Information</h1>
+                <hr>
 
-                <td class="product" onclick="toggleSelection(this)">
-                    <img src="milk tea.png" alt="Milk Tea Product">
-                    <h3>Milk Tea Name</h3>
-                    <p>$4.99</p>
-                    <label for="quantity4">Quantity:</label>
-                    <input type="number" id="quantity4" name="quantity4" value="1" min="1">
-                    <input type="hidden" name="selected_products[]" value="">
-                </td>
+            <label for="name">Name: </label>
+            <input class="add" type="text" name="name" id="name" required>
 
-            </tr>
-        </table>
+            <label for="contact_number">Contact no.: </label>
+            <input class="add" type="tel" name="contact_number" id="contact_number" required maxlength="11">
+
+            <label for="address">Complete Address: </label>
+            <input  class="add" type="text" name="address" id="address" required>
+
+            </div>
 
         <div class="order_button">
-            <button class="submit-button" onclick="submitOrder()">Submit</button>
+            <button class="submit-button" type="button" onclick="submitOrder()">Submit</button>
             <button class="back-button" onclick="goBack()">Back</button>
         </div>
-    </div>
+    </form>
 
     <script>
         function toggleSelection(element) {
             element.classList.toggle('selected');
-            const hiddenInput = element.querySelector('input[type="hidden"]');
-            hiddenInput.value = hiddenInput.value === '' ? 'selected' : '';
         }
 
         function submitOrder() {
-            alert('Order submitted!');
+            const selectedProducts = document.querySelectorAll('.selected');
+            const form = document.getElementById('order-form');
+
+            selectedProducts.forEach((product, index) => {
+                const productName = product.querySelector('label[for^="product_name"]').innerText;
+                const quantity = product.querySelector('input[type="number"]').value;
+
+                const inputProductName = document.createElement('input');
+                inputProductName.type = 'hidden';
+                inputProductName.name = `product${index + 1}`;
+                inputProductName.value = productName;
+                form.appendChild(inputProductName);
+
+                const inputQuantity = document.createElement('input');
+                inputQuantity.type = 'hidden';
+                inputQuantity.name = `quantity${index + 1}`;
+                inputQuantity.value = quantity;
+                form.appendChild(inputQuantity);
+            });
+
+            form.submit();
         }
 
         function goBack() {
