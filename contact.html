@@ -85,17 +85,17 @@
                 </div>
             
     
-            <form action="sumbit_message.php" method="post">
+            <form>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
     
-                <label for="email">Your Email:  (Make sure to write your real Email!)</label>
+                <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
     
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
     
-                <button type="submit" name="submit">Send Message</button>
+                <button type="submit" onclick="Submit()">Send Message</button>
             </form>
         </main>
     </div>
@@ -109,6 +109,12 @@
             <a href="https://www.iconfinder.com/icons/264397/to_coffee_drink_cup_icon">reference 2</a>
             <a href="https://pngtree.com/freepng/pearl-milk-tea-pearl-drink-transparent_9059833.html">reference 3</a>
     </footer>
+
+    <script>
+         function Submit() {
+            alert('Feedback submitted!');
+        }
+    </script>
 </body>
     
 </html>
